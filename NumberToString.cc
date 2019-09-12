@@ -11,7 +11,7 @@ class NumberToString{
 		string numString;
 		string twenty[20] = {"","one ","two ","three ","four ","five ","six ","seven ","eight ","nine ","ten ","eleven ","twelve ","thirteen ","fourteen ","fifteen ","sixteen ","seventeen ","eighteen ", "nineteen "};
 		string tens[10] = {"","ten ","twenty ","thirty ","forty ","fifty ","sixty ","seventy ","eighty ","ninty "};
-		string order[10] = {"hundred ","thousand ", "hundred thousand ", "million ","billion ", "trillion "};
+		string order[10] = {"hundred ","thousand ", "million ","billion ", "trillion "};
 
 	public:
 		// Default Constructor
@@ -26,8 +26,14 @@ class NumberToString{
 
 		// Outputs result to console
 		void display(){
-			cout << "___________________________________  \n\n";
-			cout << numString << "\n___________________________________\n";
+			cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+			cout << "The numeric value is : " << number << endl << endl;
+			
+			
+			cout << "The number converted to words is ... ";
+			cout << "\n__________________________________________________________________________\n";
+			cout << endl << numString;
+			cout << "\n__________________________________________________________________________\n";
 		}
 
 		// Converts number to string
@@ -140,6 +146,11 @@ class NumberToString{
 		void welcome(){
 			cout << "\nWelcome to ACTS Number to String Converter\n";
 		}
+
+		// Initializes the window for the program
+		void initialize(){
+			cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+		}
 };
 
 
@@ -179,10 +190,11 @@ int main(){
 	cout << "\n" << dummy.hundredConvert(s) << endl;
 
 	*/
+	NumberToString n;
+	n.initialize();
+	n.welcome();
 
 	while(1){
-		NumberToString n;
-		n.welcome();
 		n.accept();
 		n.convertNumber();
 		n.display();
